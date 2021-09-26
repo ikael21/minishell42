@@ -33,10 +33,7 @@ static char	*get_needed_dir(t_shell *shell, char **def_paths, char *bin_name)
 	{
 		shell->dir_ptr = opendir(def_paths[i]);
 		if (shell->dir_ptr == NULL)
-		{
-			perror(strerror(errno));
-			exit(EXIT_FAILURE);
-		}
+			continue ;
 		while (1)
 		{
 			shell->dirent = readdir(shell->dir_ptr);
@@ -69,6 +66,8 @@ static char	*get_path(t_shell *shell, char *bin_name)
 		exit(EXIT_FAILURE);
 	path = get_needed_dir(shell, def_paths, bin_name);
 	free_str_array(def_paths);
+	if (path == NULL)
+		return (path);
 	temp = ft_strjoin(path, "/"), free(path);
 	if (temp == NULL)
 		exit(EXIT_FAILURE);
@@ -81,7 +80,7 @@ static char	*get_path(t_shell *shell, char *bin_name)
 static void	execution(char *path_to_dir, char **argv, char **env)
 {
 	execve(path_to_dir, argv, env);
-	perror(strerror(errno));
+	ft_putstr_fd("minishell: command not found\n", STDERR_FILENO);
 	exit(EXIT_FAILURE);
 }
 
@@ -97,18 +96,15 @@ void	execute_command(t_shell *shell)
 	if (is_slash(argv[0]) == -1)
 		path = get_path(shell, argv[0]);
 	else
-	{
 		path = ft_strdup(argv[0]);
-		if (path == NULL)
-			exit(EXIT_FAILURE);
-	}
+	if (path == NULL)
+		path = ft_strdup(argv[0]);
 	shell->pid = fork();
 	if (shell->pid == 0)
 		execution(path, argv, env);
 	shell->pid = waitpid(shell->pid, &g_exit_status, 0);
 	if (shell->pid == -1)
-		perror(strerror(errno));
-	if (path)
-		free(path);
+		perror("minishell");
+	free(path);
 	free_str_array(argv), free_str_array(env);
 }

@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:00:51 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/23 04:06:17 by ikael            ###   ########.fr       */
+/*   Updated: 2021/09/26 08:40:14 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@
 # include <dirent.h>
 # include <sys/errno.h>
 # include <string.h>
+# include <sys/types.h>
+# include <sys/wait.h>
 # include "libft.h"
+# include "errors.h"
 
 # define BUILTIN_FUNC_NUM	7
 
@@ -46,7 +49,7 @@
 /*  global variable to save the last  */
 /*  executed program's return value   */
 /* ********************************** */
-int		g_exit_status;
+int						g_exit_status;
 
 /* ********************************************* */
 /*  struct that represents one element           */
@@ -68,6 +71,12 @@ typedef struct s_token
 	int8_t	flag;
 }	t_token;
 
+/* ******************************** */
+/* prototype for a function pointer */
+/* ******************************** */
+typedef void			(*t_func_ptr)(void *);
+typedef t_func_ptr		t_function_pointer;
+
 /* ********************************** */
 /* struct to connect all the built_in */
 /* functions with their names given   */
@@ -75,8 +84,8 @@ typedef struct s_token
 /* ********************************** */
 typedef struct s_built_in
 {
-	const char	*name;
-	void		(*f)(void *);
+	const char			*name;
+	t_function_pointer	func_ptr;
 }	t_built_in;
 
 /* ******************************** */

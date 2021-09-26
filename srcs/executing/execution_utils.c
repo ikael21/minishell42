@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.h                                           :+:      :+:    :+:   */
+/*   execution_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/21 19:16:05 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/21 19:17:55 by ikael            ###   ########.fr       */
+/*   Created: 2021/09/26 07:12:12 by ikael             #+#    #+#             */
+/*   Updated: 2021/09/26 07:25:26 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ERRORS_H
-# define ERRORS_H
-# define SYNTAX_ERROR	"syntax error\n"
-# define CMD_NOT_FOUND	"command not found\n"
+#include "minishell.h"
 
-#endif
+int	is_slash(char *path)
+{
+	int	i;
+	
+	i = -1;
+	while (path[++i])
+		if (path[i] == '/')
+			return (0);
+	return (-1);
+}
+

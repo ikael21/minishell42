@@ -39,11 +39,12 @@ static void	minishell(char **env)
 			add_history(cmd);
 		if (preparser(cmd) == -1)
 		{
+			ft_putstr_fd("minishell: " SYNTAX_ERROR, STDERR_FILENO);
 			free(cmd);
 			continue ;
 		}
 		parsing(cmd, &shell);
-		//execute_command(&shell);
+		execute_command(&shell);
 		ft_lstclear_super(&shell.argv_head);
 	}
 }
