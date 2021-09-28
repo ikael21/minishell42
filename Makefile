@@ -20,7 +20,8 @@ SRCS =	srcs/built_in/ft_echo.c				srcs/built_in/ft_pwd.c\
 		srcs/executing/execute_command.c	srcs/utils/convert_args.c\
 		srcs/utils/convert_env.c			srcs/utils/ft_getenv.c\
 		srcs/utils/free_str_array.c			srcs/utils/clear_argv_list.c\
-		srcs/parsing/parse_pipe.c			srcs/parsing/parse_redir.c
+		srcs/parsing/parse_pipe.c			srcs/parsing/parse_redir.c\
+		srcs/executing/execution_utils.c
 
 OBJS_DIR = objs_and_dfiles
 

@@ -6,22 +6,11 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 17:48:24 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/22 22:49:16 by ikael            ###   ########.fr       */
+/*   Updated: 2021/09/27 04:51:28 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-
-static int	is_slash(char *path)
-{
-	int	i;
-
-	i = -1;
-	while (path[++i])
-		if (path[i] == '/')
-			return (0);
-	return (-1);
-}
 
 static char	*get_needed_dir(t_shell *shell, char **def_paths, char *bin_name)
 {
@@ -80,7 +69,7 @@ static char	*get_path(t_shell *shell, char *bin_name)
 static void	execution(char *path_to_dir, char **argv, char **env)
 {
 	execve(path_to_dir, argv, env);
-	ft_putstr_fd("minishell: command not found\n", STDERR_FILENO);
+	ft_putstr_fd("minishell: " CMD_NOT_FOUND, STDERR_FILENO);
 	exit(EXIT_FAILURE);
 }
 

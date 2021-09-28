@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:00:51 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/26 08:40:14 by ikael            ###   ########.fr       */
+/*   Updated: 2021/09/27 04:43:31 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,5 +132,6 @@ char		**convert_env(t_list *env_head);
 const char	*ft_getenv(t_list *env_head, char *name);
 void		free_str_array(char **str_array);
 void		ft_lstclear_super(t_list **argv_head);
+int			is_slash(char *path);
 
 #endif
