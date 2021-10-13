@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   strings_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mjerrica <mjerrica@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:34:15 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/18 17:43:02 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/07 17:56:43 by mjerrica         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,13 +70,15 @@ char	*merge_strings(char *str1, char *str2, char *str3)
 	char	*temp;
 
 	result_string = ft_strjoin(str1, str2);
-	free(str1), free(str2);
+	free(str1);
+	free(str2);
 	if (result_string == NULL)
 		exit(EXIT_FAILURE);
 	if (str3)
 	{
 		temp = ft_strjoin(result_string, str3);
-		free(result_string), free(str3);
+		free(result_string);
+		free(str3);
 		result_string = temp;
 	}
 	return (result_string);

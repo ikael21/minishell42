@@ -6,13 +6,13 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 15:42:01 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:42:01 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/07 14:03:54 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
-int	ft_strcmp(char *str1, char *str2)
+int	ft_strcmp(const char *str1, const char *str2)
 {
 	int	i;
 
@@ -20,7 +20,7 @@ int	ft_strcmp(char *str1, char *str2)
 	while (str1[i] || str2[i])
 	{
 		if (str1[i] != str2[i])
-			return (-1);
+			return (str1[i] - str2[i]);
 		i++;
 	}
 	return (str1[i] - str2[i]);

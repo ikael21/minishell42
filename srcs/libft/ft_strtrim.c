@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:45:53 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:45:53 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/21 16:46:57 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:43:03 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 static int	is_there(char const *str, int c)
 {

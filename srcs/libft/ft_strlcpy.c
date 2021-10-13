@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:44:04 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:44:17 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/18 13:25:41 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:42:30 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

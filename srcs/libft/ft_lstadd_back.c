@@ -3,21 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mjerrica <mjerrica@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:29:48 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/23 07:11:05 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/23 19:13:47 by ikael             #+#    #+#             */
+/*   Updated: 2021/10/10 18:14:52 by mjerrica         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
 
-	if (lst == NULL || new == NULL)
+	if (lst == NULL && new == NULL)
 		return ;
 	if (*lst == NULL)
 	{

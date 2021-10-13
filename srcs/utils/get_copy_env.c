@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:34:15 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/18 17:42:50 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/07 15:19:29 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 /* and copies apart names and its varues into  */
 /* the given list                              */
 /* ******************************************* */
-
 void	get_copy_env(t_list **env_head, char **env)
 {
 	t_environ	*item;

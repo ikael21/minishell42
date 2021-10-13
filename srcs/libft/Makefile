@@ -39,7 +39,7 @@ $(OBJS_DIR):
 	@mkdir -p $(OBJS_DIR)
 
 $(OBJS_DIR)/%.o:%.c
-	@gcc $(FLAGS) -c $< -o $@ -MD
+	@gcc $(FLAGS) -I../../includes -c $< -o $@ -MD
 
 include $(wildcard $(D_FILES))
 

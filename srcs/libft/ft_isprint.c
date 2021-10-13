@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:29:04 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:29:04 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 12:42:49 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/19 12:44:10 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

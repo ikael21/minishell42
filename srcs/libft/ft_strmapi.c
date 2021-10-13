@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:45:03 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:45:03 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/23 13:55:11 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:42:36 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -20,9 +20,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	pointer = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (pointer == NULL)
 		return (NULL);
-	i = -1;
-	while (s[++i])
+	i = 0;
+	while (s[i] != '\0')
+	{
 		pointer[i] = f(i, s[i]);
+		i++;
+	}
 	pointer[i] = '\0';
 	return (pointer);
 }

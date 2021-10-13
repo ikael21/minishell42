@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:45:58 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:46:30 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/21 13:37:14 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:43:12 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -28,9 +28,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	pointer = (char *)malloc(sizeof(char) * (len + 1));
 	if (pointer == NULL)
 		return (NULL);
-	i = -1;
-	while (++i < len)
+	i = 0;
+	while (i < len)
+	{
 		pointer[i] = s[start + i];
+		i++;
+	}
 	pointer[i] = '\0';
 	return (pointer);
 }

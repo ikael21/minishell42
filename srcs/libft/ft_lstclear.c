@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:29:54 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/23 00:19:06 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/23 21:54:05 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/24 15:29:55 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

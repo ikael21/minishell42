@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:33:07 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:33:07 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/22 18:46:52 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/22 18:52:29 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 t_list	*ft_lstnew(void *content)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:43:28 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:43:28 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/21 16:22:14 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:42:16 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:28:23 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:28:23 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 18:30:27 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/24 20:22:14 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

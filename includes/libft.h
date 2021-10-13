@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:01:05 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/14 17:01:06 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/07 14:15:16 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int		ft_isascii(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-int		ft_strcmp(char *str1, char *str2);
+int		ft_strcmp(const char *str1, const char *str2);
 int		ft_atoi(const char *str);
 
 #endif

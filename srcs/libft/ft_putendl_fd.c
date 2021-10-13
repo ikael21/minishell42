@@ -5,15 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:36:57 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:36:57 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 14:40:36 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/25 19:41:16 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	int	i;
+
+	i = 0;
+	while (s[i] != 0)
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 	write(fd, "\n", 1);
 }

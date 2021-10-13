@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:36:31 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:36:31 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/17 13:26:10 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/19 20:08:20 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

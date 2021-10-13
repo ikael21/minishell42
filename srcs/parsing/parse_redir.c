@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 01:02:12 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/24 02:38:50 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/05 17:01:41 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,13 +49,13 @@ static void	set_next_flag(char *str, int8_t *flag)
 	if (temp == NULL)
 		exit(EXIT_FAILURE);
 	if (ft_strcmp(temp, ">") == 0)
-		*flag = R_OUT_FILE;
+		*flag = WRITE_FILE;
 	else if (ft_strcmp(temp, "<") == 0)
-		*flag = R_IN_FILE;
+		*flag = READ_FILE;
 	else if (ft_strcmp(temp, "<<") == 0)
 		*flag = DELIMITER;
 	else
-		*flag = R_APPEND_IN_FILE;
+		*flag = WRITE_APPEND_FILE;
 	free(temp);
 }
 

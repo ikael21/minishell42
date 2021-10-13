@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:28:50 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:28:50 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 12:13:49 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/19 12:20:58 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:37:43 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:37:43 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/22 12:20:02 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/22 13:17:00 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

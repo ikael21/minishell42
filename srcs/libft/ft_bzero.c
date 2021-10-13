@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:28:32 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:28:32 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/17 09:15:12 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/23 14:57:19 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

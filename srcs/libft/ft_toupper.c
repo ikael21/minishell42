@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:46:53 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:47:01 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 12:48:04 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/19 13:16:50 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:34:15 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/24 00:57:13 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/12 15:45:50 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static int	check_arrows(char *cmd)
 
 	sym = cmd[0];
 	if ((cmd[0] == '>' && cmd[1] == '<')
-			|| (cmd[0] == '<' && cmd[1] == '>'))
+		|| (cmd[0] == '<' && cmd[1] == '>'))
 		return (-1);
 	i = 0;
 	while (cmd[i] && cmd[i] == sym)
@@ -72,6 +72,19 @@ static int	check_arrows(char *cmd)
 	return (0);
 }
 
+static int	check_white_spaces(char *cmd)
+{
+	int	i;
+
+	i = 0;
+	while (cmd[i] && ((cmd[i] >= 9
+				&& cmd[i] <= 13) || cmd[i] == ' '))
+		i++;
+	if (cmd[i] == '\0')
+		return (-1);
+	return (0);
+}
+
 int	preparser(char *cmd)
 {
 	char	*temp;
@@ -79,6 +92,8 @@ int	preparser(char *cmd)
 	temp = cmd;
 	if (*temp == ';' || *temp == '|')
 		return (-1);
+	if (check_white_spaces(temp) == -1)
+		return (2);
 	while (*temp != '\0')
 	{
 		if (*temp == '\\' || *temp == '|')

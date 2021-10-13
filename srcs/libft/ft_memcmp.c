@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:35:31 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:35:31 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/18 11:34:49 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/18 12:50:25 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {

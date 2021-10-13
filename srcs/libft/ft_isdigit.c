@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:28:58 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:28:58 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 12:21:52 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/19 12:23:20 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

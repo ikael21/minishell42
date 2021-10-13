@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:38:48 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:38:48 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/22 13:19:31 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/24 18:46:24 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 static size_t	segment_length(char const *s, char end)
 {
@@ -43,9 +43,12 @@ static char	**in_case_of_fail(char **ptr, size_t num)
 {
 	size_t	i;
 
-	i = -1;
-	while (++i < num)
+	i = 0;
+	while (i < num)
+	{
 		free(ptr[i]);
+		i++;
+	}
 	free(ptr);
 	return (NULL);
 }

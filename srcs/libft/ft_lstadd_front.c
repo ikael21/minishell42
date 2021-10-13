@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:29:51 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:29:51 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/22 19:21:57 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/23 18:07:12 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

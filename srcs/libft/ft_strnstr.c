@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:45:34 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:45:34 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/20 15:07:08 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/24 20:41:16 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

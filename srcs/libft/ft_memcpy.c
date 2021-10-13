@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:35:45 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:35:45 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/17 09:49:25 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/18 10:04:33 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

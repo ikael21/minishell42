@@ -6,7 +6,7 @@
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 00:02:49 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/23 00:33:18 by ikael            ###   ########.fr       */
+/*   Updated: 2021/10/02 11:00:06 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,4 @@ void	ft_lstclear_super(t_list **argv_head)
 		temp = next;
 	}
 	*argv_head = NULL;
-	temp = ft_lstnew(NULL);
-	if (temp == NULL)
-		exit(EXIT_FAILURE);
-	ft_lstadd_back(argv_head, temp);
 }

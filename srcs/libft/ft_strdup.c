@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikael <ikael@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 15:42:15 by ikael             #+#    #+#             */
-/*   Updated: 2021/09/19 15:42:35 by ikael            ###   ########.fr       */
+/*   Created: 2021/04/19 19:33:22 by ikael             #+#    #+#             */
+/*   Updated: 2021/04/24 21:27:14 by ikael            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 static char	*ft_strcpy(char *dst, const char *src)
 {
@@ -18,11 +18,14 @@ static char	*ft_strcpy(char *dst, const char *src)
 	char		*destination;
 	const char	*source;
 
-	i = -1;
+	i = 0;
 	destination = (char *)dst;
 	source = (char *)src;
-	while (source[++i])
+	while (source[i] != '\0')
+	{
 		destination[i] = source[i];
+		i++;
+	}
 	destination[i] = '\0';
 	return (dst);
 }
